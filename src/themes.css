@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+
+
+@plugin "daisyui/theme" {
+  name: "javaScript";
+  default: true; /* set as default */
+  prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
+  color-scheme: light; /* color of browser-provided UI */
+
+  --color-primary: #d4b830;
+  --color-secondary: #5fcafd;
+  --color-background-primary: linear-gradient(135deg, #fc490b 20%, #000000 40%);
+  --color-background-secondary: #0e0a20;
+
+
+}
+
+@plugin "daisyui/theme" {
+  name: "react";
+  default: false;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-primary: #087ea4;
+  --color-secondary: #61dafb;
+  --color-background-primary: linear-gradient(
+    135deg,
+    #071024 0%,
+    #071030 50%,
+    #02060a 100%
+  );
+  --color-background-secondary: #051020;
+}
+
+@plugin "daisyui/theme" {
+  name: "css";
+  default: false;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-primary: #2196f3;
+  --color-secondary: #2962ff;
+  --color-background-primary: linear-gradient(
+    135deg,
+    #071124 0%,
+    #07122a 50%,
+    #031020 100%
+  );
+  --color-background-secondary: #061224;
+}
+
+@plugin "daisyui/theme" {
+  name: "html";
+  default: false;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-primary: #c03808;
+  --color-secondary: #fc490b;
+  --background-base-primary: linear-gradient(135deg, #fc490b 20%, #000000 40%);
+  --background-base-secondary: #3f1203;
+}
+
+@plugin "daisyui/theme" {
+  name: "gitHub";
+  default: false;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-primary: #5c6bc0;
+  --color-secondary: #24292e;
+  --color-background-primary: linear-gradient(
+    135deg,
+    #f6f8fa 0%,
+    #ffffff 50%,
+    #f6f8fa 100%
+  );
+  --color-background-secondary: #f3f4f6;
+}
+
+@plugin "daisyui/theme" {
+  name: "bootstrap";
+  default: false;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-primary: #5e3b7f;
+  --color-secondary: #fc490b;
+  --background-base-primary: linear-gradient(135deg, #fc490b 20%, #000000 40%);
+  --background-base-secondary: #3f1203;
+}
+
