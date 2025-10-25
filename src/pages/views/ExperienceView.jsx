@@ -68,12 +68,6 @@ export const ExperienceView = () => {
     }
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setTechIndex((prev) => (prev === technologies.length - 1 ? 0 : prev + 1));
-  //   }, 3000);
-  //   return () => clearInterval(interval);
-  // }, []);
 
   return (
     <motion.article className="experience-container" id="experiences">
@@ -125,24 +119,8 @@ export const ExperienceView = () => {
               </div>
             </motion.div>
           ))}
-
-          {/* <div className="experience-technologies-container">
-            <img
-              className="experience-technologies-icon"
-              src={technologies[techIndex]}
-              alt="Technology rotating"
-            />
-          </div> */}
         </div>
       </section>
-
-      {/* <div className="experience-background">
-        <img
-          className="experience-background-icon"
-          src="/image-20.png"
-          alt="Experience icon"
-        />
-      </div> */}
     </motion.article>
   );
 };

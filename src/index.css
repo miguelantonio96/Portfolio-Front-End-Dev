@@ -251,8 +251,6 @@
   }
 }
 
-
-
 .robot-waiving-chat {
   position: absolute;
   right: 0;
@@ -552,8 +550,6 @@
   background: var(--background-secondary);
   transition: all 0.8s ease-in-out;
 }
-
-
 
 .home-scroll-up-button {
   z-index: 3;
@@ -941,21 +937,7 @@
   align-items: center;
   justify-content: center;
   color: var(--color-tertiary);
-  background: url("../public/robot.gif");
-  background-size: 140px;
-  background-repeat: no-repeat;
   border: 4px solid #060606;
-  animation: backgroundPosition 50s linear infinite alternate;
-}
-
-@keyframes backgroundPosition {
-  0% {
-    background-position: top left;
-  }
-
-  100% {
-    background-position: top right;
-  }
 }
 
 .experience-content-container {

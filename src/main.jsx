@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     
     <Provider store={store}>
       <AppPortfolioContext>
-        <BrowserRouter>
+        <BrowserRouter basename="/Portfolio-Front-End-Dev/" >
           <PortfolioApp />
         </BrowserRouter>
       </AppPortfolioContext>

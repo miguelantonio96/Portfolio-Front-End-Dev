@@ -61,7 +61,7 @@ export const HomeView = () => {
         transition={{ duration: 2.5, delay: 0.5 }}
       >
         <div className="me-photo-wrapper">
-          <img src="/me-photo-holding-2.png" alt=" me" className="me-photo" />
+          <img src="public/me-photo-holding-2.png" alt=" me" className="me-photo" />
         </div>
       </motion.section>
       <motion.section

@@ -1,25 +1,6 @@
 import { motion } from "framer-motion";
 
 export const AboutView = () => {
-  // useEffect(() => {
-  //   const getCurrentSectionId = () => {
-  //     const sectionAboutMe = document.getElementById("about");
-  //     const aboutBlogContainer = document.getElementById("about-me");
-  //     const rect = sectionAboutMe.getBoundingClientRect();
-
-  //     if (
-  //       rect.top <= window.innerHeight / 2 &&
-  //       rect.bottom >= window.innerHeight / 2
-  //     ) {
-  //       aboutBlogContainer.classList.add("about-content-show");
-  //     } else {
-  //       aboutBlogContainer.classList.remove("about-content-show");
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", getCurrentSectionId);
-  //   return () => window.removeEventListener("scroll", getCurrentSectionId);
-  // }, []);
 
   return (
     <article className="about-container" id="about">
@@ -50,7 +31,7 @@ export const AboutView = () => {
               and functionality, making technology more intuitive, accessible,
               and inspiring for everyone.”
             </blockquote>
-           
+
             <p>
               I enjoy solving complex problems and continuously learning new
               technologies to improve my skills. My goal is to build
@@ -61,7 +42,7 @@ export const AboutView = () => {
           </div>
           <div className="about-image">
             <motion.img
-              src="/portfolio-me-photo-Recovered.png"
+              src="public/portfolio-me-photo-Recovered.png"
               alt="about me image"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
