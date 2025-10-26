@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router";
-import { HomePage, NotFoundPage } from "../pages";
+import { HomePage } from "../pages";
 import { AppLayout } from "../layout/AppLayout";
 import { useEffect } from "react";
 
@@ -14,7 +14,7 @@ export const AppRouter = () => {
         <Route path="/" element={<HomePage />} />
       </Route>
 
-      <Route path="*" element={<NotFoundPage />} />
+      
     </Routes>
   );
 };

@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "react-router";
+
 import { SideBarLeftHome, SideBarRightHome } from "../components";
 import { useEffect, useState } from "react";
 import { usePortfolio } from "../hooks/usePortfolio";
@@ -160,7 +160,7 @@ const initialAppState = [
   },
 ];
 export const AppLayout = ({ children }) => {
-  const location = useLocation();
+ 
   const { handleInitialAppState } = usePortfolio();
   const [isHomeOnView, setIsHomeOnView] = useState(false);
   const [stateApp, setStateApp] = useState([]);
@@ -183,11 +183,10 @@ export const AppLayout = ({ children }) => {
 
   return (
     <div className="app-layout  flex justify-center relative">
-      {location.pathname === "/" && <SideBarLeftHome />}
+      <SideBarLeftHome />
 
       {isHomeOnView && <ColorsThemeSelector />}
 
-      <Outlet />
       {children}
 
       {isHomeOnView && <HomeScrollUpButton />}

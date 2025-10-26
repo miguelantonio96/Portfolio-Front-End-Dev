@@ -1,10 +1,10 @@
-
-import { AppRouter } from "./router/AppRouter";
+import { AppLayout } from "./layout/AppLayout";
+import { HomePage } from "./pages";
 
 export const PortfolioApp = () => {
   return (
-    <>
-      <AppRouter />
-    </>
+    <AppLayout>
+      <HomePage />
+    </AppLayout>
   );
 };

@@ -1,7 +1,6 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import DescriptionIcon from "@mui/icons-material/Description";
 import { LinkedIn } from "@mui/icons-material";
-import { useNavigate } from "react-router";
 
 const contactInfo = [
   {
@@ -22,11 +21,8 @@ const contactInfo = [
 ];
 
 export const ContactLinks = () => {
-  const navigate = useNavigate();
-
   const handleContactLinks = (link) => {
-
-    navigate(link, "blank" );
+    window.open(link, "_blank");
   };
 
   return (
