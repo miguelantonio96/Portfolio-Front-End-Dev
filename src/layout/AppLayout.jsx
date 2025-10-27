@@ -8,7 +8,7 @@ import { ColorsThemeSelector } from "./components/ColorsThemeSelector";
 const initialAppState = [
   {
     name: "HTML",
-    icon: "public/html-5.png",
+    icon: "html-5.png",
     color: "#fc490bc7",
     colorSecondary: "#333",
     textColor: "#333",
@@ -23,7 +23,7 @@ const initialAppState = [
   },
   {
     name: "CSS",
-    icon: "public/css-3.png",
+    icon: "css-3.png",
     color: "#2196f3",
     colorSecondary: "#2965f1",
     textColor: "#333",
@@ -38,7 +38,7 @@ const initialAppState = [
   },
   {
     name: "JavaScript",
-    icon: "public/js-3.png",
+    icon: "js-3.png",
     color: "#ffd300",
     colorSecondary: "#000",
     textColor: "#111",
@@ -53,7 +53,7 @@ const initialAppState = [
   },
   {
     name: "React",
-    icon: "public/React-icon.png",
+    icon: "React-icon.png",
     color: "#087fa3",
     colorSecondary: "#20232a",
     textColor: "#222",
@@ -68,8 +68,8 @@ const initialAppState = [
   },
   {
     name: "TypeScript",
-    icon: "public/TS-typeScript.png",
-    color: "#3178c6",
+    icon: "TS-typeScript.png",
+    color: "#040505",
     colorSecondary: "#2f74c0",
     textColor: "#222",
     textColorSecondary: "#555",
@@ -84,7 +84,7 @@ const initialAppState = [
 
   {
     name: "Bootstrap",
-    icon: "public/bootstrap.png",
+    icon: "bootstrap.png",
     color: "#720ad3",
     colorSecondary: "#6f42c1",
     textColor: "#222",
@@ -99,7 +99,7 @@ const initialAppState = [
   },
   {
     name: "GitHub",
-    icon: "public/github.png",
+    icon: "github.png",
     color: "#5c6bc0",
     colorSecondary: "#333",
     textColor: "#f5f5f5",
@@ -114,7 +114,7 @@ const initialAppState = [
   },
   {
     name: "MongoDB",
-    icon: "public/mongoDB-icon.png",
+    icon: "mongoDB-icon.png",
     color: "#00ed64",
     colorSecondary: "#3c8d35",
     textColor: "#222",
@@ -129,7 +129,7 @@ const initialAppState = [
   },
   {
     name: "firebase",
-    icon: "public/firebase-icon.png",
+    icon: "firebase-icon.png",
     color: "#ff9100",
     colorSecondary: "#e6f0ff",
     textColor: "#222",
@@ -145,7 +145,7 @@ const initialAppState = [
 
   {
     name: "nodejs",
-    icon: "public/nodejs-icon.png",
+    icon: "nodejs-icon.png",
     color: "#326932",
     colorSecondary: "#3c8d35",
     textColor: "#222",

@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect,  useState } from "react";
 import { usePortfolio } from "../../hooks/usePortfolio";
 import { ContextApp } from "../../context/context";
 import { Viewer, Worker } from "@react-pdf-viewer/core";
@@ -19,7 +19,7 @@ const certifications = [
         description:
           "Certificate of completion for the training course in programming logic using JavaScript, provided by Alura.",
         image:
-          "src/assets/certificates/Formación Lógica de programación con JavaScript - Alura.pdf",
+          "certificates/Formación Lógica de programación con JavaScript - Alura.pdf",
       },
       {
         id: 2,
@@ -27,21 +27,21 @@ const certifications = [
         description:
           "Certificate of training in the fundamentals of React with JavaScript, covering components, state, and lifecycle.",
         image:
-          "src/assets/certificates/Formación Explora React con JavaScript - Alura.pdf",
+          "certificates/Formación Explora React con JavaScript - Alura.pdf",
       },
       {
         id: 3,
         name: "'My Career' Training - Alura",
         description:
           "Certificate of progress within the 'My Career' training offered by Alura, focused on professional development.",
-        image: "src/assets/certificates/Formación Mi carrera - Alura.pdf",
+        image: "certificates/Formación Mi carrera - Alura.pdf",
       },
       {
         id: 4,
         name: "Git and GitHub Course",
         description:
           "Certificate for the version control course using Git and GitHub, focused on collaborative workflows.",
-        image: "src/assets/certificates/Git y GitHub.pdf",
+        image: "certificates/Git y GitHub.pdf",
       },
       {
         id: 5,
@@ -49,7 +49,7 @@ const certifications = [
         description:
           "Certificate for the course on navigation in single-page applications (SPA) using React Router, provided by Alura.",
         image:
-          "src/assets/certificates/Curso React Router_ Navegación en una SPA - Alura.pdf",
+          "certificates/Curso React Router_ Navegación en una SPA - Alura.pdf",
       },
       {
         id: 6,
@@ -57,7 +57,7 @@ const certifications = [
         description:
           "Official certificate of completion for the full study program on the Alura platform.",
         image:
-          "src/assets/certificates/Miguel Antonio Casado Perez - Programa Alura finalizado.pdf",
+          "certificates/Miguel Antonio Casado Perez - Programa Alura finalizado.pdf",
       },
     ],
   },
@@ -77,14 +77,14 @@ const certifications = [
         description:
           "React course with practical projects using hooks, context API, and routing.",
         image:
-          "src/assets/certificates/React Completo Hooks Context - Udemy.pdf",
+          "certificates/React Completo Hooks Context - Udemy.pdf",
       },
       {
         id: 9,
         name: "Node.js and Express from Scratch - Udemy",
         description:
           "Certificate for the practical course on Node.js and Express to build REST APIs.",
-        image: "src/assets/certificates/Node Express desde Cero - Udemy.pdf",
+        image: "certificates/Node Express desde Cero - Udemy.pdf",
       },
     ],
   },

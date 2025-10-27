@@ -68,7 +68,6 @@ export const ExperienceView = () => {
     }
   };
 
-
   return (
     <motion.article className="experience-container" id="experiences">
       <section className="experience-content-container">

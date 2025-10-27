@@ -1,12 +1,13 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+
 const projectsListed = [
   {
     id: crypto.randomUUID(),
     title: "E-Commerce web",
     description:
       "A web application that demonstrates modern UI/UX principles and responsive design.",
-    image: "src/assets/Projects/Screenshot 2025-08-16 170405.png",
+    image: "Projects/Screenshot 2025-08-16 170405.png",
     demo: "https://example.com/demo1",
     github: "https://github.com/miguelantonio96",
   },
@@ -15,7 +16,7 @@ const projectsListed = [
     title: "Journal App",
     description:
       "An interactive dashboard for visualizing real-time data using React and Chart.js.",
-    image: "src/assets/Projects/Screenshot 2025-08-16 170703.png",
+    image: "Projects/Screenshot 2025-08-16 170703.png",
     demo: "https://example.com/demo2",
     github: "https://example.com/github2",
   },
@@ -24,7 +25,7 @@ const projectsListed = [
     title: "Chat support App",
     description:
       "A task management tool that helps users organize and prioritize their work efficiently.",
-    image: "src/assets/Projects/Screenshot 2025-08-16 170913.png",
+    image: "Projects/Screenshot 2025-08-16 170913.png",
     demo: "https://example.com/demo3",
     github: "https://example.com/github3",
   },
@@ -33,7 +34,7 @@ const projectsListed = [
     title: "Space App",
     description:
       "A portfolio website showcasing various frontend and backend development projects.",
-    image: "src/assets/Projects/spaceAppAvatar.png",
+    image: "Projects/spaceAppAvatar.png",
     demo: "https://example.com/demo4",
     github: "https://example.com/github4",
   },
@@ -42,7 +43,7 @@ const projectsListed = [
     title: "Movies Web",
     description:
       "A weather app that provides real-time weather updates and forecasts for any location.",
-    image: "src/assets/Projects/Screenshot 2025-05-11 181241.png",
+    image: "Projects/Screenshot 2025-05-11 181241.png",
     demo: "https://example.com/demo5",
     github: "https://example.com/github5",
   },
@@ -51,7 +52,7 @@ const projectsListed = [
     title: "Banking Web",
     description:
       "A blog platform where users can create, edit, and share articles with a rich text editor.",
-    image: "src/assets/Projects/aluraBankAvatar.png",
+    image: "Projects/aluraBankAvatar.png",
     demo: "https://example.com/demo6",
     github: "https://example.com/github6",
   },

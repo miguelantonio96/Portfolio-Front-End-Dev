@@ -158,13 +158,197 @@ export const initialState = {
     frontendLetters: ["F", "R", "O", "N", "T", "E", "N", "D"],
   },
 
-  aboutView: [],
+  aboutView: {
+    title: "About Me",
+    quote:
+      "My vision is to create digital experiences that merge creativity and functionality, making technology more intuitive, accessible, and engaging for all users.",
+    paragraph_1:
+      "Hi! I&apos;m Miguel, a web developer passionate about creating attractive and functional digital experiences. I specialize in react, JavaScript, and modern design.",
+    paragraph_2:
+      "I enjoy solving complex problems and continuously learning new technologies to improve my skills. My goal is to build user-friendly interfaces that make a positive impact. When I&apos;m not coding, I like exploring new design trends and collaborating with other developers on exciting projects.",
+  },
+  certificationsView: [
+    {
+      platform: "Alura",
+      courses: [
+        {
+          id: 1,
+          name: "Programming Logic with JavaScript",
+          description:
+            "Certificate of completion for the training course in programming logic using JavaScript, provided by Alura.",
+          image:
+            "certificates/Formación Lógica de programación con JavaScript - Alura.pdf",
+        },
+        {
+          id: 2,
+          name: "Explore React with JavaScript",
+          description:
+            "Certificate of training in the fundamentals of React with JavaScript, covering components, state, and lifecycle.",
+          image:
+            "certificates/Formación Explora React con JavaScript - Alura.pdf",
+        },
+        {
+          id: 3,
+          name: "'My Career' Training - Alura",
+          description:
+            "Certificate of progress within the 'My Career' training offered by Alura, focused on professional development.",
+          image: "certificates/Formación Mi carrera - Alura.pdf",
+        },
+        {
+          id: 4,
+          name: "Git and GitHub Course",
+          description:
+            "Certificate for the version control course using Git and GitHub, focused on collaborative workflows.",
+          image: "certificates/Git y GitHub.pdf",
+        },
+        {
+          id: 5,
+          name: "React Router - SPA Course",
+          description:
+            "Certificate for the course on navigation in single-page applications (SPA) using React Router, provided by Alura.",
+          image:
+            "certificates/Curso React Router_ Navegación en una SPA - Alura.pdf",
+        },
+        {
+          id: 6,
+          name: "Alura Program Completed",
+          description:
+            "Official certificate of completion for the full study program on the Alura platform.",
+          image:
+            "certificates/Miguel Antonio Casado Perez - Programa Alura finalizado.pdf",
+        },
+      ],
+    },
+    {
+      platform: "Udemy",
+      courses: [
+        {
+          id: 7,
+          name: "Modern JavaScript - Udemy",
+          description:
+            "Course on modern JavaScript with ES6+, async programming, and best practices.",
+          image: "",
+        },
+        {
+          id: 8,
+          name: "Complete React with Hooks and Context - Udemy",
+          description:
+            "React course with practical projects using hooks, context API, and routing.",
+          image: "certificates/React Completo Hooks Context - Udemy.pdf",
+        },
+        {
+          id: 9,
+          name: "Node.js and Express from Scratch - Udemy",
+          description:
+            "Certificate for the practical course on Node.js and Express to build REST APIs.",
+          image: "certificates/Node Express desde Cero - Udemy.pdf",
+        },
+      ],
+    },
+  ],
 
-  contactView: [],
+  experienceView: [
+    {
+      title: "Web Applications For",
+      projects: [
+        {
+          title: "HackSonDev LLC",
+          description:
+            "Web application for HackSonDev LLC, a company dedicated to providing software development services. The application features a dynamic blog, contact form, and dynamic portfolio section.",
+        },
+      ],
+    },
+    {
+      title: "Personal Projects",
+      projects: [
+        {
+          title: "E-Commerce website",
+          description:
+            "E-commerce website using React, TailwindCSS, and JavaScript. Features include product catalog, shopping cart, user authentication, and order management. Integrated with Stripe for secure payments and responsive design for mobile devices.",
+        },
+        {
+          title: "Journal App",
+          description:
+            "Personal journal application built with React, TailwindCSS, and OpenWeather API. Allows users to create, edit, and delete journal entries, attach weather data to each entry, and search through past notes. Includes authentication and persistent storage.",
+        },
+        {
+          title: "Chat support App",
+          description:
+            "Real-time chat support application using React, localStorage, and CSS modules. Enables users to send and receive messages instantly, supports multiple chat rooms, and stores chat history locally for persistence across sessions.",
+        },
+        {
+          title: "Space App",
+          description:
+            "Space exploration app built with React, localStorage, and CSS modules. Users can browse information about planets, stars, and missions, bookmark favorites, and view interactive media. Data is cached locally for offline access.",
+        },
+        {
+          title: "Movies Web",
+          description:
+            "Movie discovery platform using React, TailwindCSS, and OpenWeather API. Users can search for movies, view details, watch trailers, and save favorites. Responsive UI and integration with third-party movie databases.",
+        },
+        {
+          title: "Banking Web",
+          description:
+            "Online banking web application developed with React, TailwindCSS, and OpenWeather API. Provides account management, transaction history, fund transfers, and secure login. Optimized for performance and accessibility.",
+        },
+      ],
+    },
+  ],
 
-  certificationsView: [],
-
-  experienceView: [],
-
-  projectsView: [],
+  projectsView: [
+    {
+      id: crypto.randomUUID(),
+      title: "E-Commerce web",
+      description:
+        "A web application that demonstrates modern UI/UX principles and responsive design.",
+      image: "Projects/Screenshot 2025-08-16 170405.png",
+      demo: "https://example.com/demo1",
+      github: "https://github.com/miguelantonio96",
+    },
+    {
+      id: crypto.randomUUID(),
+      title: "Journal App",
+      description:
+        "An interactive dashboard for visualizing real-time data using React and Chart.js.",
+      image: "Projects/Screenshot 2025-08-16 170703.png",
+      demo: "https://example.com/demo2",
+      github: "https://example.com/github2",
+    },
+    {
+      id: crypto.randomUUID(),
+      title: "Chat support App",
+      description:
+        "A task management tool that helps users organize and prioritize their work efficiently.",
+      image: "Projects/Screenshot 2025-08-16 170913.png",
+      demo: "https://example.com/demo3",
+      github: "https://example.com/github3",
+    },
+    {
+      id: crypto.randomUUID(),
+      title: "Space App",
+      description:
+        "A portfolio website showcasing various frontend and backend development projects.",
+      image: "Projects/spaceAppAvatar.png",
+      demo: "https://example.com/demo4",
+      github: "https://example.com/github4",
+    },
+    {
+      id: crypto.randomUUID(),
+      title: "Movies Web",
+      description:
+        "A weather app that provides real-time weather updates and forecasts for any location.",
+      image: "Projects/Screenshot 2025-05-11 181241.png",
+      demo: "https://example.com/demo5",
+      github: "https://example.com/github5",
+    },
+    {
+      id: crypto.randomUUID(),
+      title: "Banking Web",
+      description:
+        "A blog platform where users can create, edit, and share articles with a rich text editor.",
+      image: "Projects/aluraBankAvatar.png",
+      demo: "https://example.com/demo6",
+      github: "https://example.com/github6",
+    },
+  ],
 };

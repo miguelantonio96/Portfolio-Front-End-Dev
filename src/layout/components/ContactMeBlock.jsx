@@ -61,8 +61,8 @@ export const ContactMeBlock = () => {
             className="contact-me-button"
           >
             <img
-              src="public/robot-waiving-chat.gif"
-              alt=""
+              src="robot-waiving-chat.gif"
+              alt="Contact Me"
               className="robot-waiving"
             />
           </span>

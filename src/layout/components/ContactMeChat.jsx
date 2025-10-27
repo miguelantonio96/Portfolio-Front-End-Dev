@@ -54,8 +54,8 @@ export const ContactMeChat = () => {
             <Avatar
               src={
                 msg.sender === "bot"
-                  ? "/robot-avatar-chat.png"
-                  : "/user-avatar.png"
+                  ? "robot-avatar-chat.png"
+                  : ""
               }
               alt={msg.sender === "bot" ? "User Avatar" : "Bot Avatar"}
               className="contact-me-chat-avatar"

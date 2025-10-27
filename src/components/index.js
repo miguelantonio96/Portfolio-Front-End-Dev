@@ -1,7 +1,6 @@
 export * from "./Navbar";
 export * from "./ContactLinks";
 export * from "./BannerNameHome";
-export * from "./SliderHome";
 export * from "../modals/ContactMeModal";
 export * from "./ContactLinks";
 export * from "./AppCard";

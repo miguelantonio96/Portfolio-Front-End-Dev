@@ -4,7 +4,6 @@ import { BannerNameHome } from "../../components";
 import { motion } from "framer-motion";
 import { usePortfolio } from "../../hooks/usePortfolio";
 
-
 export const HomeView = () => {
   const { initialAppState } = usePortfolio();
 
@@ -55,18 +54,16 @@ export const HomeView = () => {
 
       <motion.section
         className="me-photo-container"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, transform: "scale(0.7)" }}
+        animate={{ opacity: 1, transform: "scale(1)" }}
         exit={{ opacity: 0 }}
         transition={{ duration: 2.5, delay: 0.5 }}
       >
-        <div className="me-photo-wrapper">
-          <img src="public/me-photo-holding-2.png" alt=" me" className="me-photo" />
-        </div>
+        <img src="me-photo-holding-2.png" alt=" me" className="me-photo" />
       </motion.section>
       <motion.section
         className="skills-section"
-        initial={{ opacity: 0, transform: "scale(0.7)" }}
+        initial={{ opacity: 0, transform: "scale(1.7)" }}
         animate={{ opacity: 1, transform: "scale(1)" }}
         exit={{ opacity: 0 }}
         transition={{ duration: 2.5, delay: 0.5 }}
@@ -91,10 +88,10 @@ export const HomeView = () => {
                       <h2 className="skill-name">{skill.name}</h2>
                     ) : (
                       <img
+                        className="skill-icon"
                         onClick={() => handleOpenModal(skill)}
                         src={skill.icon}
                         alt={skill.name}
-                        className="h-25"
                       />
                     )}
                   </div>

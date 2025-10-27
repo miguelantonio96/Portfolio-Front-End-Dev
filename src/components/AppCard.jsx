@@ -105,12 +105,7 @@ export const AppCard = ({ title, description, demo, github, image }) => {
 
       <div className="video-image-container w-full flex justify-center items-center">
         <img src={image} alt="Project 1" className="w-full  object-cover" />
-        {/* <video
-          src="/Untitled video - Made with Clipchamp (17).mp4"
-          alt="Project 1"
-          className="w-full  object-cover"
-          controls
-        /> */}
+     
       </div>
 
       <CardContent>

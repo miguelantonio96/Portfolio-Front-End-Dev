@@ -7,7 +7,6 @@ import { store } from "./redux/store";
 import { AppPortfolioContext } from "./context/ContextApp";
 import "./index.css";
 import "tailwindcss";
-import "animate.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

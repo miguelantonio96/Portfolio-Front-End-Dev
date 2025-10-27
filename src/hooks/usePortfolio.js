@@ -27,13 +27,13 @@ const initialConversation = {
 
 export const usePortfolio = () => {
   const dispatch = useDispatch();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   // States
   const [chatBot, setChatBot] = useState(
     JSON.parse(localStorage.getItem("chatBot")) || initialConversation
   );
   const [inputValue, setInputValue] = useState("");
   // Selectors
-
   const {
     currentArticleTitle,
     certifications,
@@ -44,6 +44,33 @@ export const usePortfolio = () => {
   const { IsContactMe, IsMinimizeChat } = useSelector((state) => state.ui);
 
   console.log(chatBot);
+
+  // Function to handle menu toggle
+  const handleNavToArticle = (path) => {
+    const element = document.querySelector(path);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+
+    const menuList = document.querySelector(".nav-bar-items-list");
+    menuList.style.display = "none";
+    setIsMenuOpen(false);
+  };
+
+  const handleOpenMenu = () => {
+    const menuList = document.querySelector(".nav-bar-items-list");
+
+    if (isMenuOpen) {
+      menuList.style.display = "none";
+      menuList.classList.remove("nav-bar-items-list-active");
+    } else {
+      menuList.style.display = "flex";
+      menuList.classList.add("nav-bar-items-list-active");
+    }
+
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   function setTimeOutFC(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
@@ -187,12 +214,15 @@ export const usePortfolio = () => {
     handleSkills,
     handleSkillsActive,
     handleProjects,
+
     handleCertifications,
     handleCertificateActive,
     handleToggleContactMeChat,
     handleToggleMinimizeChat,
     handleInputChangeChat,
     handleSendMessage,
+    handleOpenMenu,
+    handleNavToArticle,
     setTimeOutFC,
     chatBot,
     inputRef,
@@ -204,5 +234,6 @@ export const usePortfolio = () => {
     initialAppState,
     currentArticleTitle,
     skills,
+    isMenuOpen,
   };
 };
